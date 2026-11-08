@@ -3,11 +3,8 @@ import java.util.Arrays;
 public class ArrayBilangan12 {
     public static void main(String[] args) {
         
-        int[] bil = new int[4];
-        bil[0] = 5.0;         
-        bil[1] = 124242;
-        bil[2] = 7.5;
-        bil[3] = 17000000;
+        int[] bil = {5, 13, -7, 17};
+
         for (int i = 0; i < bil.length; i++) {
             System.out.println("bil["+ i +"] = "+ bil[i]);
         }
