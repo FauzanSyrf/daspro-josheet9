@@ -6,14 +6,19 @@ public class ArrayRataNilai {
         int[] nilaiMHS = new int[10];
         int total = 0;
         double rata2;
+        int lulus=0;
         for (int i = 0; i < nilaiMHS.length; i++) {
             System.out.print("Masukkan nilai mahasiswa ke-"+ (i + 1) +" : ");
             nilaiMHS[i] = input.nextInt();
             total += nilaiMHS[i];
+            if (nilaiMHS[i] > 70) {
+                lulus++;
+            }
         }
         rata2 = (double) total / nilaiMHS.length;
         System.out.println("Total nilai: "+total);
         System.out.println("Rata-rata: "+ rata2);
+        System.out.println("Mahasiswa lulus: "+lulus);
         int tertinggi = nilaiMHS[0];
         int terendah = nilaiMHS[0];
         for (int i = 1; i < nilaiMHS.length; i++) {
