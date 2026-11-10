@@ -22,15 +22,13 @@ public class ArrayRataNilai {
         }
         System.out.println("Nilai tertinggi: "+tertinggi);
         System.out.println("Nilai terendah: "+terendah);
-            
-        for (int i = 0; i < nilaiMHS.length; i++) {       
-            if (nilaiMHS[i] >= 85) {
-                System.out.println("Nilai mahasiswa ke-"+i+" = "+nilaiMHS[i]+" SANGAT BAIK");
-            }else if (nilaiMHS[i] >=75) {
-                System.out.println("Nilai mahasiswa ke-"+i+" = "+nilaiMHS[i]+" BAIK");
-            }else {
-                System.out.println("Nilai mahasiswa ke-"+i+" = "+nilaiMHS[i]+" PERLU PENDAMPINGAN");
+        if (rata2 >= 85) {
+            System.out.println("Predikat kelas SANGAT BAIK");
+        }else if (rata2 >= 75){
+            System.out.println("Predikat kelas BAIK");
+        }else{
+            System.out.println("Predikat kelas PERLU PENDAMPINGAN");
         }
-        }
+        
     }
 }
