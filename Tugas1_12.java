@@ -20,7 +20,6 @@ public class Tugas1_12 {
         rata2 = total / nilai.length;
         System.out.println("Total nilai: "+total);
         System.out.println("Rata-rata: "+ rata2);
-        System.out.println("Mahasiswa lulus: "+lulus);
         int tertinggi = nilai[0];
         int terendah = nilai[0];
         for (int i = 1; i < nilai.length; i++) {
@@ -29,5 +28,10 @@ public class Tugas1_12 {
         }
         System.out.println("Nilai tertinggi: "+tertinggi);
         System.out.println("Nilai terendah: "+terendah);
+        for (int i = 0; i < nilai.length; i++) {
+            String status = (nilai[i] > 70) ? "LULUS" : "TIDAK LULUS";
+            System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilai[i] + " (" + status + ")");
+        }
+            
     }
 }
