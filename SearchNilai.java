@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class SearchNilai {
@@ -21,7 +22,7 @@ public class SearchNilai {
             }
         }        
         if (!ditemukan) {
-            System.out.println("Nilai "+ key +" tidak ditemukan");
+            System.out.println("Nilai "+ key +" pada elemen ini tidak ditemukan\nNilai yang tersedia hanya sebagai berikut: "+Arrays.toString(nilai));
         }
     }
 }
